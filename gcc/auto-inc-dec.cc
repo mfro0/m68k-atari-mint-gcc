@@ -728,11 +728,11 @@ try_merge (void)
 
   /* Look to see if the inc register is dead after the memory
      reference.  If it is, do not do the combination.  */
-  if (find_regno_note (last_insn, REG_DEAD, REGNO (inc_reg)))
+    if (find_regno_note (last_insn, REG_DEAD, REGNO (inc_reg)))
     {
-      if (dump_file)
-	fprintf (dump_file, "dead failure %d\n", REGNO (inc_reg));
-      return false;
+        if (dump_file)
+        fprintf (dump_file, "dead failure %d\n", REGNO (inc_reg));
+        return false;
     }
 
   mem_insn.reg1_state = (mem_insn.reg1_is_const)
