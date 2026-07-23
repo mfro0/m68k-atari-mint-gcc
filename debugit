@@ -1,2 +1,0 @@
-cd build
-GNATBIND=gnatbind-13 CC=gcc-13 CXX=g++-13 ../configure --target=m68k-atari-mintelf --prefix=/usr --enable-languages=ada,c,c++ --disable-nls --disable-libstdcxx-pch --disable-libcc1 --disable-sjlj-exceptions --disable-fixincludes BOOT_CFLAGS="-O0 -g" CFLAGS="-O0 -g" CXXFLAGS="-O0 -g" CFLAGS_FOR_TARGET="-O0 -g" CXXFLAGS_FOR_TARGET="-O0 -g" LDFLAGS_FOR_TARGET="-Wl,--gc-sections" ADA_FOR_TARGET="-O0 -g -ffunction-sections -fdata-sections"
